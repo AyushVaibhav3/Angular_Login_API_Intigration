@@ -9,4 +9,14 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
+signUpMode: boolean = false;
+
+  OnSignUpClick(){
+    this.signUpMode = true ;
+  }
+
+  OnSigninClick(){
+    this.signUpMode = false ;
+  }
+
 }
